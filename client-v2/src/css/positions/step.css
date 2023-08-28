@@ -1,0 +1,34 @@
+.step {
+    padding: 4rem 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+
+.step__body label {
+    font-size: calc(var(--Text-font-size-1) + 0.1rem);
+    opacity: 0.9;
+    font-family: font-400;
+}
+
+.step__body h1 {
+    font-size: 2.8rem;
+    letter-spacing: 0.1rem;
+    margin-top: 1rem;
+    font-family: font-200;
+    opacity: 0.86;
+}
+
+.step__body p {
+    margin-top: 1.4rem;
+    font-family: font-200;
+    font-size: calc(var(--Text-font-size-1) + 0.1rem);
+    opacity: 0.9;
+    line-height: 1.6;
+    letter-spacing: 0.02rem;
+}
+
+.step__vid {
+    width: 26rem;
+}

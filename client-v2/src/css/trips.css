@@ -1,0 +1,136 @@
+.trips {
+    margin: 3rem 5rem 2rem;
+}
+
+.trips__header {
+    border-bottom: 0.02rem solid #dcdcdc;
+    padding-bottom: 1.6rem;
+    font-family: font-200;
+    opacity: 0.9;
+}
+
+.trips__subtitle {
+    margin-top: 0.4rem;
+    font-family: font-100;
+}
+
+.trips__subtitle i {
+    background-color: #dcdcdc65;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+}
+
+.trips__header ul {
+    margin-top: 1rem;
+}
+
+.trips__header ul li {
+    opacity: 0.96;
+    font-family: font-100;
+}
+
+.trips__item {
+    display: grid;
+    grid-template-columns: minmax(26rem, 1fr) 10rem 10rem 10rem 14rem 8rem;
+    align-items: center;
+    height: 100%;
+    /* border-bottom: 0.02rem solid #dcdcdc; */
+}
+
+.trips__item-fields {
+    position: sticky;
+    top: 4rem;
+    background-color: var(--Primary);
+    padding-top: 2rem;
+    z-index: 1;
+}
+
+.trips__item > * {
+    padding: 0.4rem 0rem 0.4rem 0.8rem;
+}
+
+/* newly added */
+.trips__item label,
+.trips__item > div,
+.trips__item > ul {
+    border-bottom: 0.02rem solid #dcdcdc;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.trips__item > div:not(:first-child),
+.trips__item li {
+    font-family: font-100;
+    opacity: 0.96;
+}
+
+.trips__item label {
+    text-transform: uppercase;
+    opacity: 0.5;
+    font-size: var(--Text-font-size-2);
+    /* margin: 2px; */
+    margin: 2px 0;
+}
+
+.trips__stats-label {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-right: 1rem;
+}
+
+.trips__stats-label i {
+    font-size: var(--Text-font-size-1);
+}
+
+.trips__destination {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.trips__name {
+    font-family: font-300;
+    opacity: 0.9;
+}
+
+.trips__destination img {
+    width: 6rem;
+    height: 4rem;
+    border-radius: 0.6rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.trips__stats {
+    display: flex;
+    justify-content: center;
+    gap: 1.4rem;
+    /* margin-right: 1rem; */
+    padding-right: 1rem;
+}
+
+.trips__feedback {
+    padding: 0;
+    width: 2rem;
+    height: 2rem;
+    background-color: #dcdcdc40;
+    border-radius: 50%;
+    margin-left: 2rem;
+    transition: 0.2s;
+    position: relative;
+}
+
+.trips__feedback:hover {
+    background-color: #dcdcdc;
+}
+
+/* .trips__feedback::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    border-bottom: 0.02rem solid #dcdcdc;
+} */

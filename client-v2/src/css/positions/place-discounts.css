@@ -1,0 +1,113 @@
+.place-discounts {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 7rem 0 0;
+}
+
+.place-discounts__title {
+    font-size: 2rem;
+    opacity: 0.86;
+    font-family: font-200;
+    letter-spacing: 0.02rem;
+}
+
+.place-discounts__subtitle {
+    font-size: calc(var(--Text-font-size-1) + 0.1rem);
+    font-family: font-200;
+    opacity: 0.66;
+    letter-spacing: 0.04rem;
+    margin-top: 0.8rem;
+}
+
+.place-discounts__items {
+    margin-top: 2rem;
+    display: grid;
+    gap: 1.4rem;
+}
+
+.place-discounts__item {
+    border: 0.02rem solid #dcdcdc;
+    border-radius: 0.6rem;
+    padding: 2rem;
+    background-color: #dcdcdc40;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.place-discounts__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.place-discounts__percent {
+    font-size: calc(var(--Text-font-size-1) + 0.1rem);
+    opacity: 0.9;
+    padding: 0.6rem;
+    border: 0.06rem solid #dcdcdc00;
+}
+
+.place-discounts__item:not(:first-child) .place-discounts__percent {
+    border: 0.06rem solid var(--Text);
+    border-radius: 0.6rem;
+    opacity: 0.1;
+}
+
+.place-discounts__percent.active {
+    background-color: var(--Primary);
+    border-color: #aeaeae;
+    border-radius: 0.6rem;
+    opacity: 0.9;
+}
+
+.place-discounts__item:not(:first-child) .place-discounts__percent.active {
+    background-color: var(--Primary);
+    border-color: #aeaeae;
+    border-radius: 0.6rem;
+    opacity: 0.9;
+}
+
+.place-discounts__item:first-child .place-discounts__percent {
+    opacity: 0.5;
+}
+
+.place-discounts__item:first-child .place-discounts__percent.active {
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 0.6rem;
+    opacity: 0.9;
+}
+
+
+.place-discounts__info p {
+    font-size: var(--Text-font-size-1);
+    font-family: font-100;
+    opacity: 0.9;
+    margin-bottom: 0.2rem;
+}
+
+.place-discounts__info p:last-child {
+    font-size: var(--Text-font-size-2);
+    opacity: 0.8;
+}
+
+.place-discounts__checkbox {
+    scale: 1.8;
+    accent-color: var(--Text);
+    cursor: pointer;
+}
+
+.place-discounts__learn-more {
+    font-size: 0.75rem;
+    opacity: 0.7;
+    font-family: font-100;
+    text-align: center;
+    margin-top: 0.6rem;
+}
+
+.place-discounts__learn-more span {
+    text-decoration: underline;
+}

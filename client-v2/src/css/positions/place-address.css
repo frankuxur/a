@@ -1,0 +1,102 @@
+.place-address {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 8rem 0;
+}
+
+.place-address__title {
+    width: 80%;
+    font-size: 2rem;
+    opacity: 0.86;
+    font-family: font-200;
+    letter-spacing: 0.02rem;
+}
+
+.place-address__subtitle {
+    font-size: calc(var(--Text-font-size-1) + 0.1rem);
+    font-family: font-200;
+    opacity: 0.6;
+    margin-top: 0.6rem;
+}
+
+.place-address__form {
+    margin-top: 2rem;
+}
+
+.place-address__details {
+    border: 0.02rem solid #bbb;
+    border-radius: 0.6rem;
+}
+
+.place-address__input-grp {
+    position: relative;
+    height: 4rem;
+}
+
+.place-address__details .place-address__input-grp:not(:last-child) {
+    border-bottom: 0.02rem solid #bbb;
+}
+
+.place-address__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1.4rem 0.6rem 0 0.6rem;
+    font-size: var(--Text-font-size-1);
+    font-family: font-100;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.place-address__input-label {
+    position: absolute;
+    top: 50%;
+    left: 0.6rem;
+    transform: translateY(-50%);
+    width: 100%;
+    font-size: var(--Text-font-size-1);
+    font-family: font-100;
+    opacity: 0.7;
+    z-index: 0;
+    transition: 0.3s;
+}
+
+.place-address__input:focus + .place-address__input-label {
+    top: 1.4rem;
+    font-size: calc(var(--Text-font-size-2) - 0.1rem);
+}
+
+.place-address__input:not(:placeholder-shown).place-address__input:not(:focus) + .place-address__input-label {
+    top: 1.4rem;
+    font-size: calc(var(--Text-font-size-2) - 0.1rem);
+}
+
+.place-address__input:focus {
+    border: 0.1rem solid var(--Text);
+    border-radius: 0.4rem;
+}
+
+.place-address__input-grp:has(> .place-address__input:focus) {
+    border-bottom: none;
+}
+
+/* country input */
+.place-address__form > .place-address__input-grp:first-child {
+    border: 0.02rem solid #bbb;
+    border-radius: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+.place-address__input-grp select {
+    appearance: none
+}
+
+.place-address__form > .place-address__input-grp:first-child > i {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    font-size: var(--Subtitle-font-size);
+}

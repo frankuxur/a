@@ -1,0 +1,76 @@
+.place-area {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding-top: 8rem;
+}
+
+.place-area__title {
+    width: 80%;
+    font-size: 2rem;
+    opacity: 0.86;
+    font-family: font-200;
+    letter-spacing: 0.02rem;
+}
+
+.place-area__items {
+    margin-top: 3rem;
+}   
+
+.place-area__item {
+    border: 0.02rem solid #dcdcdc;
+    border-radius: 0.6rem;
+}
+
+.place-area__item:not(:last-child) {
+    margin-bottom: 0.8rem;
+}
+
+.place-area__item button {
+    width: 100%;
+    padding: 1.4rem;
+    gap: 0.4rem;
+    border: 0.1rem solid transparent;
+    border-radius: 0.6rem;
+    transition: 0.1s; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.place-area__item button:active {
+    scale: 0.98;
+}
+
+.place-area__item button:focus,
+.place-area__item.active button {
+    background-color: #dcdcdc40;
+    border: 0.1rem solid var(--Text);
+}
+
+.place-area__item button:hover {
+    border: 0.1rem solid var(--Text);
+}
+
+.place-area__item button > div {
+    margin-right: 4rem;
+    text-align: left;
+    opacity: 0.9;
+}
+
+.place-area__item button h3 {
+    font-size: calc(var(--Text-font-size-1) + 0.1rem);
+    font-family: font-200;
+    letter-spacing: 0.06rem;
+}
+
+.place-area__item button p {
+    font-size: calc(var(--Text-font-size-2) + 0.1rem);
+    font-family: font-100;
+    opacity: 0.8;
+}
+
+.place-area__item button > i {
+    margin-left: 4rem;
+    font-size: 2.2rem;
+    font-family: font-100;
+    opacity: 0.8;
+}

@@ -1,0 +1,307 @@
+/* booking widget */
+.booking-widget {
+    align-self: flex-start;
+    flex: 1;
+    /* max-width: 23rem; */
+    border-radius: 0.8rem;
+    box-shadow: 0 0.2rem 0.6rem 0.01rem rgba(0, 0, 0, 0.1);
+    padding: 1.6rem;
+    border: 0.02rem solid #dcdcdc90;
+}
+
+.booking-widget header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.9;
+}
+
+.booking-widget header > p {
+    font-size: var(--Subtitle-font-size);
+    font-family: font-300;
+}
+
+.booking-widget header > p span {
+    font-size: var(--Text-font-size-1);
+    font-family: font-100;
+}
+
+.booking-widget__review {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    font-family: font-400;
+    font-size: var(--Text-font-size-2);
+}
+
+.booking-widget__review li:first-child {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+}
+
+.booking-widget__review li:last-child {
+    opacity: 0.76;
+}
+
+.booking-widget__info {
+    border: 0.02rem solid #cdcdcd;
+    border-radius: 0.6rem;
+    margin-top: 1.4rem;
+}
+
+.booking-widget__dates {
+    border-bottom: 0.02rem solid #cdcdcd;
+    display: flex;
+}
+
+.booking-widget__checkin {
+    flex: 1;
+}
+
+.booking-widget__checkout {
+    flex: 1;
+}
+
+.booking-widget__guests {
+    width: 100%;
+}
+
+.booking-widget__checkin,
+.booking-widget__checkout,
+.booking-widget__guests {
+    position: relative;
+}
+
+.booking-widget__info label {
+    position: absolute;
+    top: 0.6rem;
+    left: 0.6rem;
+    font-size: 0.6rem;
+    opacity: 0.9;
+}
+
+.booking-widget__info input[type='date'] {
+    width: 100%;
+    height: 100%;
+    padding: 1.4rem 0 0.4rem 0.6rem;
+    /* height: 4rem; */
+    font-size: var(--Text-font-size-1);
+    opacity: 0.9;
+    font-family: font-100;
+}
+
+.booking-widget__info input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    filter: invert(0.6);
+    position: absolute;
+}
+
+.booking-widget__checkin,
+.booking-widget__checkout,
+.booking-widget__guests {
+    border: 0.1rem solid transparent;
+    border-radius: 0.4rem;
+}
+
+.booking-widget__checkin {
+    border-right: 0.02rem solid #cdcdcd;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.booking-widget__checkout {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.booking-widget__guests-box {
+    position: relative;
+}
+
+.booking-widget__guests {
+    padding: 1.4rem 0 0.4rem 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.booking-widget__guests > p {
+    text-align: left;
+    font-size: var(--Text-font-size-1);
+    opacity: 0.9;
+    font-family: font-100;
+}
+
+.booking-widget__guests > i {
+    font-size: var(--Title-font-size);
+    position: absolute;
+    top: 50%;
+    right: 0.6rem;
+    transform: translateY(-50%);
+}
+
+.booking-widget__guests:focus {
+    border: 0.1rem solid var(--Text);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.booking-widget__guests-options {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 101%;
+    background-color: var(--Primary);
+    z-index: 1;
+    box-shadow: 0 0 0.4rem 0.02rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.4rem;
+    padding: 1.4rem 0.8rem;
+    display: grid;
+    gap: 1.4rem;
+}
+
+.booking-widget__guests-options li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.booking-widget__guests-options li p:first-child {
+    font-size: var(--Text-font-size-1);
+    font-family: font-400;
+    opacity: 0.96;
+}
+
+.booking-widget__guests-options li p:nth-child(2) {
+    font-size: var(--Text-font-size-2);
+    font-family: font-100;
+    opacity: 0.96;
+}
+
+.booking-widget__guests-options li > div:last-child {
+    font-size: var(--Text-font-size-1);
+    font-family: font-200;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.booking-widget__guests-options li > div:last-child button {
+    border: 0.02rem solid #aaaaaa;
+    border-radius: 50%;
+    height: 1.2rem;
+    width: 1.2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s;
+}
+
+.booking-widget__guests-options li > div:last-child span {
+    width: 0.6rem;
+    display: flex;
+    justify-content: center;
+    font-family: font-100;
+    opacity: 0.8;
+}
+
+.booking-widget__guests-options li > div i {
+    opacity: 0.8;
+    font-size: 1.1rem;
+}
+
+.booking-widget__guests-options li > div button:hover {
+    border-color: var(--Text);
+}
+
+.booking-widget__guests-options li > div button:disabled {
+    cursor: not-allowed;
+    border-color: #dcdcdc;
+}
+
+.booking-widget__guests-options li > div button:hover i {
+    opacity: 1;
+}
+
+.booking-widget__guests-options > p {
+    font-size: 0.75rem;
+    font-family: font-100;
+    line-height: 1.4;
+    margin-top: 0.4rem;
+    opacity: 0.96;
+}
+
+.booking-widget__guests-options > button {
+    font-size: var(--Text-font-size-1);
+    text-transform: capitalize;
+    justify-self: flex-end;
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+    opacity: 0.9;
+    transition: 0.2s ease-out;
+}
+
+.booking-widget__guests-options > button:hover {
+    background-color: #dcdcdc40;
+}
+
+
+
+
+
+.booking-widget__reserve {
+    background-color: var(--Accent);
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 0.4rem;
+    padding: 0.8rem;
+    color: var(--Primary);
+    font-family: font-400;
+    transition: 0.1s ease-out;
+}
+
+.booking-widget__reserve:active {
+    scale: 0.96;
+}
+
+.booking-widget__reserve:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.booking-widget__fees {
+    margin-top: 1.2rem;
+    display: grid;
+    gap: 0.8rem;
+}
+
+.booking-widget__fees > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--Text-font-size-1);
+    font-family: font-100;
+    opacity: 0.96;
+} 
+
+.booking-widget__fees > div p:first-child {
+    text-decoration: underline;
+    text-decoration-color: #767676;
+    text-decoration-thickness: 0.01rem;
+}
+
+.booking-widget__fees > div:last-child {
+    border-top: 0.02rem solid #dcdcdc;
+    padding: 1.6rem 0 0.4rem;
+}
+
+.booking-widget__fees > div:last-child p {
+    text-decoration: none;
+    font-family: font-400;
+}

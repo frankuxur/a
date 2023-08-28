@@ -1,0 +1,131 @@
+.success {
+    /* border: 1px solid #ccc; */
+    width: 40rem;
+    margin: 8rem auto; 
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-start; */
+    gap: 1rem;
+}
+
+.success__left {
+    background-color: #dcdcdc40;
+    border-radius: 0.6rem;
+    padding: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.success__title {
+    font-size: 4rem;
+    line-height: 1;
+    opacity: 0.96;
+}
+
+.success__left p {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    opacity: 0.9;
+}
+
+.booking-summary {
+    width: 30rem;
+}
+
+.booking-summary__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking-summary__header h2 {
+    font-size: var(--Subtitle-font-size);
+    opacity: 0.9;
+    margin-bottom: 0.4rem;
+}
+
+.booking-summary__header ul {
+    display: grid;
+    gap: 0.2rem;
+}
+
+.booking-summary__header li {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: var(--Text-font-size-2);
+    font-family: font-200;
+    opacity: 0.96;
+}
+
+.booking-summary__image {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 0.6rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.booking-summary__amenities {
+    margin-top: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.booking-summary__amenities li {
+    background-color: #dcdcdc40;
+    font-size: var(--Text-font-size-2);
+    font-family: font-200;
+    border-radius: 0.4rem;
+    padding: 0.2rem 0.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.booking-summary__details {
+    margin-top: 1.2rem;
+}
+
+.booking-summary__details > p {
+    font-size: var(--Text-font-size-2);
+    font-family: font-100;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    opacity: 0.9;
+}
+
+.booking-summary__details > h2 {
+    font-size: var(--Title-font-size);
+    opacity: 0.9;
+}
+
+.booking-summary__details h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    opacity: 0.9;
+}
+
+.booking-summary__details h4 i {
+    color: #0fca76;
+}
+
+.booking-summary__button {
+    background-color: var(--Accent);
+    color: var(--Primary);
+    font-family: font-400;
+    font-size: var(--Subtitle-font-size);
+    width: 100%;
+    margin-top: 1.4rem;
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+    transition: 0.1s ease-out;
+}
+
+.booking-summary__button:active {
+    scale: 0.96;
+}

@@ -1,0 +1,84 @@
+.congratulations {
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+.congratulations__img,
+.congratulations__body {
+    width: 50%;
+}
+
+.congratulations__img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.congratulations__body {
+    border-left: 0.5rem solid var(--Primary);
+    background-color: #000;
+    color: var(--Primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.congratulations__body h1 {
+    font-family: font-200;
+    font-size: 3rem;
+    width: 30rem;
+    line-height: 1.2;
+}
+
+.congratulations__body p {
+    font-size: var(--Text-font-size-1);
+    width: 30rem;
+    font-family: font-100;
+    margin-top: 2rem;
+}
+
+.congratulations__signature {
+    width: 30rem;
+    margin-top: 1.4rem;
+}
+
+.congratulations__signature img {
+    width: 5rem;
+}
+
+.congratulations__signature p {
+    font-size: 0.75rem;
+    font-family: font-300;
+    margin-top: -0.04rem;
+}
+
+.congratulations__logo {
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    width: 2rem;
+}
+
+.congratulations__footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 0.1rem solid #dcdcdc2c;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.congratulations__btn {
+    color: var(--Primary);
+    background-color: var(--Accent);
+    font-size: var(--Text-font-size-1);
+    font-family: font-400;
+    padding: 0.8rem 1.8rem;
+    margin: 1rem;
+    margin-right: 2rem;
+    border-radius: 0.6rem;
+}

@@ -1,0 +1,134 @@
+.hosting__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 1.2rem;
+    border-bottom: 0.1rem solid #dcdcdc40;
+    position: relative;
+}
+
+/* .hosting__header-logo {
+    flex: 1;
+} */
+
+.hosting__header-logo img {
+    height: 2.6rem;
+}
+
+.hosting__header > div {
+    display: flex;
+}
+
+/* notifications */
+.hosting__notifs {
+    margin-right: 0.8rem;
+}
+
+.hosting__notifs-btn {
+    padding: 0.2rem;
+    border-radius: 2rem;
+    border: 0.01rem solid rgba(0, 0, 0, 0.1);
+}
+
+.hosting__notifs-btn i {
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(var(--Text-font-size-1) + 0.1rem);
+} 
+
+.hosting__notifs-btn:hover {
+    background-color: #dcdcdc40;
+}
+
+.hosting__notifs-content {
+    background-color: var(--Primary);
+    position: absolute;
+    top: 94%;
+    right: 5rem;
+    box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    font-size: var(--Text-font-size-2);
+    font-family: font-100;
+    width: 20rem;
+    z-index: 2;
+}
+
+.hosting__notifs-content h2 {
+    font-size: calc(var(--Text-font-size-1) + 0.1rem);
+    padding: 2rem;
+}
+
+.hosting__nav .nav__items {
+    right: 1.2rem;
+    z-index: 2;
+}
+
+.hosting__nav .header__menu-btn:hover {
+    background-color: #dcdcdc40;
+    border: 0.01rem solid rgba(0, 0, 0, 0);
+} 
+
+.hosting__options {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hosting__options li a {
+    opacity: 0.9;
+    font-family: font-400;
+    font-size: var(--Text-font-size-2);
+    padding: 0.6rem 1rem;
+    border-radius: 1.2rem;
+    transition: 0.2s;
+}
+
+.hosting__options li a:hover {
+    background-color: #dcdcdc40;
+}
+
+
+/* main */
+.hosting__main {
+    width: 100%;
+    margin: 4rem auto;
+    padding: 0 8rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hosting__main header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hosting__main h1 {
+    font-family: font-200;
+    letter-spacing: 0.06rem;
+}
+
+.hosting__main header a {
+    border: 0.01rem solid var(--Text);
+    border-radius: 0.6rem;
+    padding: 0.4rem 0.8rem;
+    font-size: var(--Text-font-size-2);
+    font-family: font-400;
+}
+
+.hosting__main header a:hover {
+    background-color: #dcdcdc40;
+}

@@ -1,0 +1,92 @@
+.confirm {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: grid;
+    place-items: center;
+    z-index: 10;
+}
+
+.confirm__content {
+    background-color: var(--Primary);
+    min-height: 20rem;
+    width: 30rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.confirm__content > img {
+    width: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.confirm__content p {
+    font-size: var(--Text-font-size-2);
+}
+
+.confirm__content p:first-of-type {
+    font-size: calc(var(--Text-font-size-2) - 0.2rem);
+    font-family: font-400;
+    opacity: 0.9;
+}
+
+.confirm__title {
+    line-height: 1.2;
+    font-size: var(--Title-font-size);
+    opacity: 0.9;
+}
+
+.confirm__content p:not(:nth-of-type(1)) {
+    font-family: font-100;
+    opacity: 0.8;
+}
+
+.confirm__content a {
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+}
+
+.confirm__content a span {
+    text-decoration: underline;
+    font-family: font-400;
+}
+
+.confirm__content a i {
+    font-size: calc(var(--Text-font-size-1) + 0.1rem);
+    align-self: flex-end;
+}
+
+.confirm__buttons {
+    margin-top: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.confirm__buttons button:first-child {
+    background-color: var(--Accent);
+    color: var(--Primary);
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    font-family: font-400;
+}
+
+.confirm__buttons button:last-child {
+    border: 0.1rem solid var(--Text);
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    font-family: font-400;
+    opacity: 0.9;
+}
+
+/* ::-webkit-scrollbar {
+    display: none;
+} */

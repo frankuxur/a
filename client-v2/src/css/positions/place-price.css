@@ -1,0 +1,81 @@
+.place-price {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 10rem 0 8rem;
+}
+
+.place-price__title {
+    font-size: 2rem;
+    opacity: 0.86;
+    font-family: font-200;
+    letter-spacing: 0.02rem;
+}
+
+.place-price__subtitle {
+    font-size: calc(var(--Text-font-size-1) + 0.1rem);
+    font-family: font-200;
+    opacity: 0.66;
+    letter-spacing: 0.04rem;
+    margin-top: 0.8rem;
+}
+
+.place-price__set-price {
+    border: 0.02rem solid #aaaaaa;
+    border-radius: 1rem;
+    width: 100%;
+    height: 8.75rem;
+    margin-top: 2rem;
+    display: grid;
+    place-items: center;
+}
+
+.place-price__price {
+    font-size: 3rem;
+    opacity: 0.9;
+    max-width: 100%;
+}
+
+/* .place-price__input {
+    font-size: 3rem;
+    opacity: 0.9;
+} */
+
+.place-price__set-price i {
+    padding: 0.2rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 0.02rem solid #dcdcdc;
+    margin: 0.4rem;
+    cursor: pointer;
+}
+
+.place-price__editor {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.place-price__input {
+    opacity: 0.9;
+    font-size: 3rem;
+    font-family: font-300;
+}
+
+.place-price__editor span {
+    opacity: 0.9;
+    font-size: 3rem;
+
+}
+
+.place-price__learn-more {
+    text-decoration: underline;
+    opacity: 0.6;
+    font-size: 0.75rem;
+    margin-top: 6rem;
+    text-align: center;
+    font-family: font-200;
+}

@@ -1,0 +1,9 @@
+# api
+api-v2/node_modules
+api-v2/uploads
+api-v2/.env
+
+# client
+client-v2/node_modules
+client-v2/src/assets
+client-v2/public

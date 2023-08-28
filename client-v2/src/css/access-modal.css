@@ -1,0 +1,82 @@
+.access {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: grid;
+    place-items: center;
+}
+
+.access__content {
+    background-color: var(--Primary);
+    min-height: 20rem;
+    width: 30rem;
+    border-radius: 1rem;
+}
+
+.access__header {
+    border-bottom: 0.01rem solid #dcdcdc;
+    padding: 1rem;
+    font-family: font-300;
+    font-size: var(--Text-font-size-1);
+    text-align: center;
+    position: relative;
+}
+
+.access__header button {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    transform: translateY(-50%);
+}
+
+.access__header button i {
+    border-radius: 50%;
+    padding: 0.4rem;
+}
+
+.access__header button i:hover {
+    background-color: #f7f7f7;
+}
+
+.access__form {
+    padding: 2rem;
+}
+
+.access__title {
+    font-family: font-200;
+    font-size: var(--Subtitle-font-size);
+}
+
+.access__inputs {
+    border: 0.01rem solid #dcdcdc;
+    border-radius: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    margin: 1.4rem 0 1rem;
+}
+
+.access__inputs input {
+    padding: 1rem;
+    font-size: var(--Text-font-size-1);
+    font-weight: 400;
+}
+
+.access__inputs input:first-child {
+    border-bottom: 0.01rem solid #dcdcdc;
+}
+
+.access__inputs input:focus {
+    outline: 0.1rem solid var(--Text);
+    border-radius: 0.4rem;
+}
+
+.access__button {
+    width: 100%;
+    background-color: var(--Accent);
+    color: var(--Primary);
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+}

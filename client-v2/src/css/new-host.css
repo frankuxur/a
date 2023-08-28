@@ -1,0 +1,97 @@
+.new-host__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 8rem;
+    position: relative;
+    position: sticky;
+    top: 0;
+    background-color: var(--Primary);
+    z-index: 1;
+}
+
+.new-host__header-logo img {
+    width: 2.2rem;
+}
+
+.new-host__header > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    font-family: font-400;
+}
+
+.new-host__header > div p {
+    opacity: 0.9;
+}
+
+.new-host__header button {
+    background-color: var(--Accent);
+    color: var(--Primary);
+    font-size: calc(var(--Subtitle-font-size) - 0.2rem);
+    font-family: font-400;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.new-host__header-icon {
+    position: relative;
+}
+
+.new-host__header-icon i:first-child {
+    font-size: calc(var(--Subtitle-font-size) + 0.4rem);
+}
+
+.new-host__header-icon i:last-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -46%);
+    font-size: var(--Text-font-size-1);
+}
+
+/* section-1 */
+.new-host__section-1 {
+    width: 100%;
+    margin: 4rem auto;
+    padding: 0 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.new-host__section-1 h2 {
+    font-size: calc(var(--Title-font-size) + 1.4rem);
+    opacity: 0.86;
+    font-family: font-200;
+}
+
+.new-host__section-1 img {
+    width: 100%;
+}
+
+.new-host__support {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4rem;
+}
+
+.new-host__support h3 {
+    font-family: font-200;
+    font-size: calc(var(--Text-font-size-1) + 0.1rem);
+}
+
+.new-host__support p {
+    font-family: font-100;
+    font-size: var(--Text-font-size-1);
+    margin-top: 0.6rem;
+    line-height: 1.5;
+    opacity: 0.8;
+}

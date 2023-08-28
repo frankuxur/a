@@ -1,0 +1,26 @@
+.account-settings {
+    max-width: 63.5rem;
+    margin: 4.2rem auto;
+}
+
+.account-settings__header {
+    opacity: 0.96;
+}
+
+.account-settings__title {
+    font-family: font-200;
+    margin-bottom: 0.4rem;
+}
+
+.account-settings__user-info {
+    font-size: 1.125rem;
+    font-family: font-400;
+}
+
+.account-settings__user-info span {
+    font-family: font-100;
+}
+
+.account-settings__user-info a:active {
+    color: #6c6c6c;
+}

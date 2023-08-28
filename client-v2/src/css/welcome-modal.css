@@ -1,0 +1,80 @@
+.welcome {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: grid;
+    place-items: center;
+    z-index: 10;
+}
+
+.welcome__content {
+    background-color: var(--Primary);
+    min-height: 20rem;
+    width: 30rem;
+    border-radius: 1rem;
+}
+
+.welcome__header {
+    border-bottom: 0.01rem solid #dcdcdc;
+    padding: 1rem;
+    font-family: font-300;
+    font-size: var(--Text-font-size-1);
+    text-align: center;
+    position: relative;
+}
+
+.welcome__header button {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    padding: 0.2rem 0;
+}
+
+.welcome__header button i {
+    border-radius: 50%;
+    padding: 0.4rem;
+}
+
+.welcome__header button i:hover {
+    background-color: #f7f7f7;
+}
+
+.welcome__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 2rem;
+    padding-top: 1rem;
+}
+
+.welcome__body img {
+    width: 4.6rem;
+}
+
+.welcome__body h2 {
+    font-size: var(--Subtitle-font-size);
+    opacity: 0.9;
+}
+
+.welcome__body p {
+    font-size: var(--Text-font-size-1);
+    opacity: 0.8;
+    font-family: font-200;
+    text-align: center;
+}
+
+.welcome__body button {
+    width: 100%;
+    background-color: var(--Text);
+    color: var(--Primary);
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    font-family: font-400;
+    margin-top: 0.8rem;
+}

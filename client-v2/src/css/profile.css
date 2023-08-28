@@ -1,0 +1,115 @@
+.profile {
+    width: 72.625rem;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10rem;
+}
+
+.profile__user-card {
+    width: 21.25rem;
+    border-radius: 1.4rem;
+    box-shadow: 0 0.3rem 1.25rem rgba(0,0,0,0.2);
+    padding: 2rem 1.5rem;
+    display: grid;
+    place-items: center;
+    gap: 0.4rem;
+    opacity: 0.96;
+}
+
+.profile__user-icon {
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 50%;
+    background-color: var(--Text);
+    display: grid;
+    place-items: center;
+    color: var(--Primary);
+    font-size: 3.6rem;
+    font-family: font-400;
+    padding-bottom: 0.4rem;
+}
+
+.profile__user-icon.active {
+    display: flex;
+    padding: 0;
+    background-color: #dcdcdc40;
+}
+
+.profile__user-icon img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile__user-fname {
+    font-size: 2rem;
+    opacity: 0.9;
+}
+
+.profile__user-card p:last-child {
+    opacity: 0.9;
+    margin-top: -0.4rem;
+    font-size: var(--Text-font-size-2);
+}
+
+.profile__create-profile {
+    max-width: 20rem;
+    opacity: 0.9;
+}
+
+.profile__create-profile h2 {
+    font-size: var(--Subtitle-font-size);
+    font-family: font-200;
+}
+
+.profile__create-profile p {
+    font-size: var(--Text-font-size-2);
+    font-family: font-100;
+    opacity: 0.7;
+    margin-top: 0.8rem;
+}
+
+.profile__create-profile button {
+    background-color: var(--Accent);
+    color: var(--Primary);
+    padding: 0.8rem 1.4rem;
+    border-radius: 0.6rem;
+    margin-top: 1.4rem;
+    font-family: font-400;
+}
+
+/* active */
+.profile__create-profile.active h2 {
+    font-size: 2rem;
+    font-family: font-300;
+    opacity: 0.96;
+}
+
+.profile__create-profile.active button {
+    background-color: var(--Primary);
+    color: var(--Text);
+    border: 0.02rem solid var(--Text);
+    padding: 0.4rem 0.9rem;
+    border-radius: 0.4rem;
+    font-size: var(--Text-font-size-2);
+    opacity: 1;
+    transition: 0.1s ease;
+}
+
+.profile__create-profile.active button:active {
+    scale: 0.94;
+}
+
+.profile__create-profile.active button:hover {
+    background-color: #dcdcdc40;
+}
+
+.profile__create-profile.active p {
+    font-size: var(--Text-font-size-1);
+    opacity: 1;
+    margin-top: 2.6rem;
+}

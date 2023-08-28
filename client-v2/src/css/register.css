@@ -1,0 +1,116 @@
+.register {
+    width: 30rem;
+    margin: 4rem auto;
+    border: 0.02rem solid #DCDCDC;
+    border-radius: 1rem;
+}
+
+.register__header {
+    border-bottom: 0.01rem solid #DCDCDC;
+    padding: 1rem;
+    font-size: var(--Text-font-size-1);
+    font-family: font-400;
+    text-align: center;
+    position: relative;
+}
+
+.register__header button {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+}
+
+.register__header button i {
+    border-radius: 50%;
+    padding: 0.4rem;
+}
+
+.register__header button i:hover {
+    background-color: #f7f7f7;
+}
+
+.register__form {
+    padding: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.register__form > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.register__form input {
+    border: 0.01rem solid #dcdcdc;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    font-size: var(--Text-font-size-1);
+    font-family: font-100;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    font-size: 1.2rem;
+    opacity: 0.8;
+    filter: invert(0.6);
+  }
+  
+.register__dob input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    opacity: 1
+}
+
+.register__dob input[type='date'] {
+    color: #757575;
+}
+
+.register__form label {
+    margin-top: 0.4rem;
+}
+
+.register__name input:first-child {
+    border-radius: 0.6rem 0.6rem 0 0;
+}
+
+.register__name :nth-child(2) {
+    border-radius: 0 0 0.6rem 0.6rem;
+}
+
+.register__form label,
+.register__form p,
+.register__footer p {
+    font-size: calc(var(--Text-font-size-2) - 0.2rem);
+    font-family: font-200;
+    opacity: 0.6;
+}
+
+.register__policy {
+    opacity: 1 !important;
+    margin-bottom: 1rem;
+}
+
+.register__policy span {
+    color: #0133d6 !important;
+    text-decoration: underline;
+}
+
+.register__button {
+    width: 100%;
+    background-color: var(--Accent);
+    color: var(--Primary);
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    font-family: font-400;
+}
+
+.register__footer {
+    margin: 0 2rem 2rem;
+    border-top: 0.01rem solid #DCDCDC;
+    padding-top: 1.5rem;
+}
+
+.register__footer p:last-child {
+    margin-top: 0.6rem;
+    display: flex;
+    gap: 0.6rem;
+}

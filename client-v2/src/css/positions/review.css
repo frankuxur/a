@@ -1,0 +1,340 @@
+.review {
+    max-width: 52rem;
+    margin: 0 auto;
+    padding: 6rem 0 0;
+}
+
+.review__title {
+    font-size: 3rem;
+    opacity: 0.86;
+    font-family: font-200;
+    letter-spacing: 0.02rem;
+}
+
+.review__subtitle {
+    font-size: 1.125rem;
+    font-family: font-200;
+    opacity: 0.6;
+    letter-spacing: 0.01rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.review__body {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.review__card,
+.review__next {
+    flex: 1;
+}
+
+.review__card {
+    box-shadow: 0 0.1rem 0.8rem 0.4rem rgba(0, 0, 0, 0.08);
+    border-radius: 0.8rem;
+    padding: 1rem;
+    max-width: 22rem;
+    position: relative;
+}
+
+.review__card .review__card-photo label {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    background-color: var(--Primary);
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.2rem;
+    font-size: var(--Text-font-size-2);
+    font-family: font-400;
+}
+
+.review__card img {
+    border-radius: 0.6rem;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.review__card-info {
+    margin-top: 0.4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.review__card-info > p {
+    font-family: font-100;
+    opacity: 0.96;
+    font-size: var(--Text-font-size-2);
+}
+
+.review__card-info div {
+    text-align: start;
+    opacity: 0.86;
+    font-size: var(--Text-font-size-2);
+}
+
+.review__card-info div > p:last-child span {
+    font-family: font-100;
+}
+
+.review__next ul {
+    display: grid;
+    gap: 1.6rem;
+}
+
+.review__next li {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.review__next li i {
+    font-size: calc(var(--Title-font-size) + 0.4rem);
+    opacity: 0.8;
+}
+
+.review__next li h3 {
+    font-size: 1.1rem;
+    font-family: font-200;
+    letter-spacing: 0.04rem;
+}
+
+.review__next li p {
+    font-size: var(--Text-font-size-2);
+    font-family: font-100;
+    opacity: 0.7;
+    margin-top: 0.2rem;
+}
+
+.review__next h2 {
+    font-size: var(--Subtitle-font-size);
+    font-family: font-200;
+    opacity: 0.9;
+    margin-bottom: 1.8rem;
+}
+
+
+/* modal */
+.review__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: grid;
+    place-items: center;
+    z-index: 1000;
+}
+
+.review__modal-content {
+    background-color: var(--Primary);
+    width: 64rem;
+    height: 36rem;
+    border-radius: 1rem;
+}
+
+.review__modal-header {
+    border-bottom: 0.02rem solid #dcdcdc;
+    font-size: var(--Text-font-size-1);
+    padding: 1.4rem;
+    text-align: center;
+    position: relative;
+    opacity: 0.9;
+}
+
+.review__modal-header button {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    font-size: var(--Subtitle-font-size);
+    opacity: 0.9;
+    border-radius: 50%;
+    height: 1.8rem;
+    width: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review__modal-header button:hover {
+    background-color: #dcdcdc60;
+}
+
+.review__modal-body {
+    height: 31.85rem;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    /* padding: 1.5rem; */
+}
+
+.review__modal-img {
+    width: 27.75rem;
+    height: 26.25rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.6rem;
+    margin: 3rem;
+    margin-right: 1.5rem;
+}
+
+.review__modal-details {
+    margin: 3rem;
+    margin-top: 0;
+    margin-left: 1.5rem;
+    padding: 3rem 0;
+    flex: 1;
+    display: grid;
+    gap: 2.2rem;
+    overflow: scroll;
+    max-height: 31.85rem;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.review__modal-details::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .review__modal-details {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+.review__modal-details > h2 {
+    font-size: 2rem;
+    font-family: font-200;
+    opacity: 0.9;
+}
+
+.review__modal-info {
+    margin-top: -0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.8rem;
+}
+
+.review__modal-info h3 {
+    font-size: var(--Subtitle-font-size);
+    opacity: 0.9;
+    font-family: font-200;
+}
+
+.review__modal-info ul {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+}
+
+.review__modal-info li {
+    position: relative;
+    opacity: 0.9;
+    font-family: font-100;
+    line-height: 0.6;
+}
+
+.review__modal-info li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 60%;
+    right: -0.45rem;
+    transform: translateY(-50%);
+    height: 0.15rem;
+    width: 0.15rem;
+    border-radius: 50%;
+    background-color:#818181;;
+}
+
+.review__modal-user-img {
+    height: 3.5rem;
+    width: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--Text);
+    color: var(--Primary);
+    border-radius: 50%;
+    font-size: var(--Text-font-size-1);
+    font-family: font-200;
+}
+
+.review__modal-user-img.active {
+    background-color: transparent;
+}
+
+.review__modal-user-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.review__modal-description {
+    font-family: font-100;
+    opacity: 0.9;
+    padding: 2rem 0;
+    border-top: 0.02rem solid #dcdcdc90;
+    border-bottom: 0.02rem solid #dcdcdcf8;
+}
+
+.review__modal-amenities h3 {
+    font-size: var(--Text-font-size-1);
+    opacity: 0.9;
+    font-family: font-200;
+    margin-bottom: 1.6rem;
+}
+
+.review__modal-amenities ul {
+    display: grid;
+    gap: 1rem;
+}
+
+.review__modal-amenities li {
+    padding-bottom: 1rem;
+    border-bottom: 0.02rem solid #dcdcdcf8;
+    font-size: var(--Text-font-size-2);
+    font-family: font-100;
+    opacity: 0.9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review__modal-amenities li i {
+    font-size: var(--Title-font-size);
+    opacity: 0.9;
+}
+
+.review__modal-address h3 {
+    font-size: var(--Text-font-size-1);
+    opacity: 0.9;
+    font-family: font-200;
+    margin-bottom: 1.4rem;
+}
+
+.review__modal-address p {
+    font-size: var(--Text-font-size-1);
+    font-family: font-100;
+    opacity: 0.9;
+}
+
+.review__modal-address p:last-child {
+    font-size: 0.75rem;
+    opacity: 0.7;
+    margin-top: 0.6rem;
+} 
+
+.review__modal-address p:last-child span {
+    text-decoration: underline;
+}

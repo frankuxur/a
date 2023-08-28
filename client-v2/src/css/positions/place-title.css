@@ -1,0 +1,50 @@
+.place-title {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 10rem 0 8rem;
+}
+
+.place-title__title {
+    font-size: 2rem;
+    opacity: 0.86;
+    font-family: font-200;
+    letter-spacing: 0.02rem;
+}
+
+.place-title__subtitle {
+    font-size: calc(var(--Text-font-size-1) + 0.1rem);
+    font-family: font-200;
+    opacity: 0.66;
+    letter-spacing: 0.04rem;
+    margin-top: 0.8rem;
+}
+
+.place-title__textarea {
+    border: 0.09px solid #8f8f8f;
+    border-radius: 0.6rem;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 9rem;
+    max-height: 23rem;
+    margin-top: 1.4rem;
+    padding: 1.5rem;
+    font-size: var(--Subtitle-font-size);
+    color: #222222d8;
+    margin-bottom: 1rem;
+}
+
+.place-title__textarea:focus {
+    border: 0.16rem solid var(--Text);
+}
+
+.place-title__textarea-label {
+    font-size: calc(var(--Text-font-size-2) + 0.08rem);
+    opacity: 0.6;
+}
+
+.place-title__error {
+    color: #ff1818;
+    font-family: font-100;
+    font-size: var(--Text-font-size-2);
+    margin-top: 0.4rem;
+}

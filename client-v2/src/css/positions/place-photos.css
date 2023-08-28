@@ -1,0 +1,203 @@
+.place-photos {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 8rem 0;
+}
+
+.place-photos__title {
+    font-size: 2rem;
+    opacity: 0.86;
+    font-family: font-200;
+    letter-spacing: 0.02rem;
+}
+
+.place-photos__subtitle {
+    font-size: calc(var(--Text-font-size-1) + 0.1rem);
+    font-family: font-200;
+    opacity: 0.66;
+    letter-spacing: 0.04rem;
+    margin-top: 0.8rem;
+}
+
+/* grid */
+.place-photos__grid {
+    margin-top: 3rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 11rem;
+    gap: 0.8rem;
+}
+
+.place-photos__grid > *:first-child {
+    grid-column: 1 / -1;
+    grid-row: 1 / 3;
+}
+
+.place-photos__upload {
+    border: 0.02rem dashed #1f171780;
+    border-radius: 0.6rem;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.place-photos__upload input,
+.place-photos__upload input::-webkit-file-upload-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    /* visibility: hidden; */
+}
+
+.place-photos__upload input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.place-photos__media-icon {
+    scale: 0.8;
+}
+
+.place-photos__upload.more .place-photos__media-icon {
+    color: #1f171780;
+    font-size: 3.4rem;
+}
+
+.place-photos__upload.add-more .place-photos__media-icon {
+    font-size: 4rem;
+    color: #1f171780;
+}
+
+.place-photos__upload.add-more > p {
+    color: #1f171780;
+    font-family: font-400;
+    margin-top: -0.4rem;
+}
+
+.place-photos__upload h2 {
+    font-family: font-200;
+    opacity: 0.86;
+    font-size: var(--Subtitle-font-size);
+}
+
+.place-photos__upload > div {
+    display: grid;
+    gap: 0.4rem;
+}
+
+.place-photos__upload > div p {
+    font-size: var(--Text-font-size-1);
+    font-family: font-100;
+}
+
+.place-photos__upload > div > p:last-child {
+    margin-top: 1rem;
+    font-size: var(--Text-font-size-2);
+    text-decoration: underline;
+    font-family: font-300;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.place-photos__upload > div > p:last-child:hover {
+    opacity: 1;
+}
+
+.place-photos__photo {
+    position: relative;
+}
+
+.place-photos__photo-label {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: var(--Primary);
+    padding: 0.4rem;
+    border-radius: 0.2rem;
+    font-size: var(--Text-font-size-2);
+    color: var(--Text);
+    opacity: 0;
+}
+
+.place-photos__photo:first-child .place-photos__photo-label {
+    opacity: 1;
+}
+
+.place-photos__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.6rem;
+}
+
+.place-photos__action-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.place-photos__action-btn:active {
+    scale: 0.9;
+}
+
+.place-photos__action-btn i {
+    height: 1.2rem;
+    width: 1.2rem;
+    padding: 1rem;
+    box-shadow: 0 0 0.2rem 0.1rem rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--Subtitle-font-size);
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+.place-photos__action-btn i:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 0.4rem 0.1rem rgba(0, 0, 0, 0.1);
+} 
+
+.place-photos__actions {
+    background-color: var(--Primary);
+    position: absolute;
+    top: 3.4rem;
+    right: 1rem;
+    box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.6rem;
+    font-size: var(--Text-font-size-2);
+    font-family: font-100;
+    padding: 0.6rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+}
+
+.place-photos__actions button {
+    padding: 0.6rem;
+    width: 100%;
+    text-align: start;
+    font-size: var(--Text-font-size-2);
+    font-family: font-400;
+    opacity: 0.9;
+}
+
+.place-photos__actions button:hover {
+    background-color: #dcdcdc20;
+}
